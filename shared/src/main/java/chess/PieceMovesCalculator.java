@@ -14,8 +14,6 @@ public class PieceMovesCalculator {
         return List.of();
     }
     public static Collection<ChessMove> king_moves_list(ChessBoard board, ChessPosition myPosition){
-        PieceMovesCalculator.board = board;
-        PieceMovesCalculator.myPosition = myPosition;
         int col = myPosition.getColumn();
         int row = myPosition.getRow();
         Collection<ChessMove> move_list = new ArrayList<>();
