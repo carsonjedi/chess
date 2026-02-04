@@ -72,20 +72,20 @@ public class ChessPiece {
         if(type == PieceType.PAWN){
             return PieceMovesCalculator.pawn_moves_list(board, myPosition);
         }
-        if(type == PieceType.KING){
-            return PieceMovesCalculator.king_moves_list(board, myPosition);
+        else if(type == PieceType.KNIGHT){
+            return PieceMovesCalculator.knight_moves_list(board, myPosition);
         }
-        if(type == PieceType.BISHOP){
+        else if(type == PieceType.BISHOP){
             return PieceMovesCalculator.bishop_moves_list(board, myPosition);
         }
-        if(type == PieceType.ROOK){
-            return PieceMovesCalculator.rook_moves_list(board, myPosition);
-        }
-        if(type == PieceType.QUEEN){
+        else if(type == PieceType.QUEEN){
             return PieceMovesCalculator.queen_moves_list(board, myPosition);
         }
-        if(type == PieceType.KNIGHT){
-            return PieceMovesCalculator.knight_moves_list(board, myPosition);
+        else if(type == PieceType.ROOK){
+            return PieceMovesCalculator.rook_moves_list(board, myPosition);
+        }
+        else if(type == PieceType.KING){
+            return PieceMovesCalculator.king_moves_list(board, myPosition);
         }
         return List.of();
     }
