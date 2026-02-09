@@ -81,7 +81,10 @@ public class ChessGame {
             return null;
         }
         else {
-            Collection<ChessMove> move_list = new ArrayList<>();
+            Collection<ChessMove> move_list = piece.pieceMoves(board, startPosition);
+            for (ChessMove move : move_list){
+                if ()
+            }
             return move_list;
         }
     }
@@ -93,7 +96,15 @@ public class ChessGame {
      * @throws InvalidMoveException if move is invalid
      */
     public void makeMove(ChessMove move) throws InvalidMoveException {
-        if ();
+        ChessPosition startPosition = move.getStartPosition();
+        Collection<ChessMove> valid_list = validMoves(startPosition);
+        for (ChessMove valid_move : valid_list){
+            if (valid_move == move)
+            {
+
+            }
+        }
+        throw new InvalidMoveException();
     }
 
     /**
