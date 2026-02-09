@@ -145,7 +145,6 @@ public class ChessGame {
      */
     public void setBoard(ChessBoard board) {
         this.board = board;
-        throw new RuntimeException("Not implemented");
     }
 
     /**
